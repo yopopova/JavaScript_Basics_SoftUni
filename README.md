@@ -14,3 +14,7 @@ The "Programming Basics" course provides the initial programming skills necessar
 - Working with logical statements (if-else)
 - Perform simple calculations
 - Working with more complex loops (nested for loops and while)
+
+## Certificate
+
+![Programming Basics - May 2021 - Certificate](https://github.com/yopopova/JavaScript_Basics_SoftUni/assets/59256039/b890d58f-681b-4633-942d-f5d68e0593c5)
