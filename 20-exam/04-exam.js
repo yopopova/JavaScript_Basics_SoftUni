@@ -3,10 +3,10 @@ function exam(input) {
     let students = Number(input[index]);
     index++;
 
-    let poor = 0;
-    let average = 0;
-    let good = 0;
-    let veryGood = 0;
+    let poor = 0; // For students with grade between 2.00 and 2.99
+    let average = 0; // For students with grade between 3.00 and 3.99
+    let good = 0; // For students with grade between 4.00 and 4.99
+    let veryGood = 0; // For students with a grade of 5.00 or higher
 
     let totalResult = 0;
 

@@ -9,8 +9,9 @@ function pcGameShop(input) {
     let others = 0;
 
     let inputL = input.length;
+    // ^ If we don't lock it in a variable, but write it directly in for, it means that the program will calculate the length of the array every time, which slows down the program and is not a good practice.
 
-    for(let i = 1; i < inputL; i++) {
+    for(let i = 1; i < inputL; i++) { // To avoid writing input.length - 1, let's just start i from 1 and replace input.length - 1 with the name of a variable in which we locked the value with the length of the array.
         let gameName = input[index];
         index++;
 

@@ -12,14 +12,15 @@ function barcodeGenerator(input) {
     let endNum3 = Number(endNum[2]);
     let endNum4 = Number(endNum[3]);
 
-    let buffer = "";
+    let buffer = ""; // Adds all odd numbers.
 
     for (let a = startNum1; a <= endNum1; a++) {
         for (let b = startNum2; b <= endNum2; b++) {
             for (let c = startNum3; c <= endNum3; c++) {
                 for (let d = startNum4; d <= endNum4; d++) {
                     if (a % 2 !== 0 && b % 2 !== 0 && c % 2 !== 0 && d % 2 !== 0) {
-                        buffer += "" + a + b + c + d + " ";
+                        buffer += "" + a + b + c + d + " "; // Here we must have an empty string at the beginning, otherwise a mathematical addition will occur and the result will be different.
+                        // ^ Finally we add an empty string again to have a space between the numbers.
                     }
                 }
             }

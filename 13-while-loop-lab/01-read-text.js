@@ -1,15 +1,15 @@
 function readText(input) {
-    let index = 0;
-    let inputL = input.length;
+    let index = 0; // End point
+    let inputL = input.length; // End point
 
-    while(index < inputL) {
+    while(index < inputL) { // Condition
 
         if(input[index] === "Stop") {
             break;
         }
 
         console.log(input[index]);
-        index++;
+        index++; // Step
     }
 }
 

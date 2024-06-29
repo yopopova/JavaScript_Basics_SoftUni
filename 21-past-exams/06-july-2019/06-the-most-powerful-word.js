@@ -9,13 +9,13 @@ function theMostPowerfulWord(input) {
 
     while (word !== "End of words") {
         let wordL = word.length;
-        let firstLetter = word[0];
+        let firstLetter = word[0]; // We take the first letter of each word to see if it is not one of the specified.
 
         for (let i = 0; i < wordL; i++) {
-            let letter = word[i];
-            let symbol = letter.charCodeAt(0);
+            let letter = word[i]; // We take each letter separately.
+            let symbol = letter.charCodeAt(0); // Get the ASCII value (number) of each letter.
 
-            sum += symbol;
+            sum += symbol; // Add the sum of the letter values.
         }
 
         switch (firstLetter) {

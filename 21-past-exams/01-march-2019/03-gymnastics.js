@@ -46,11 +46,11 @@ function gymnastics(input) {
 
     }
 
-    let totalScore = difficulty + performance;
+    let totalScore = difficulty + performance; // The final country result.
 
-    let diff = 20 - totalScore;
+    let diff = 20 - totalScore; // How much they fall short of for maximum score.
 
-    let diffScorePecent = (diff / 20) * 100;
+    let diffScorePecent = (diff / 20) * 100; // The difference as a %.
 
     console.log(`The team of ${country} get ${totalScore.toFixed(3)} on ${instrument}.`);
     console.log(`${diffScorePecent.toFixed(2)}%`);

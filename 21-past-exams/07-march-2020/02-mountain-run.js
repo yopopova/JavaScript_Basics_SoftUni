@@ -5,7 +5,7 @@ function mountainRun(input) {
 
     let georgiTime = distanceInMeters * timePerSecondForOneMeter;
 
-    let timeSlow = Math.floor(distanceInMeters / 50) * 30;
+    let timeSlow = Math.floor(distanceInMeters / 50) * 30; // The delay in seconds.
 
     let finishTime = georgiTime + timeSlow;
 

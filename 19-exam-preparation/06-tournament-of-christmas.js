@@ -3,22 +3,23 @@ function tournamentOfChristmas(input) {
     let days = Number(input[index]);
     index++;
 
-    let winsCounter = 0;
-    let losesCounter = 0;
+    let winsCounter = 0; // Count the wins.
+    let losesCounter = 0; // Count the losses.
 
     let donations = 0;
 
     for (let i = 1; i <= days; i++) {
-        let command = input[index];
+        let command = input[index]; // Sports.
         index++
 
         let wins = 0;
         let loses = 0;
 
+
         let dayDonations = 0;
 
         while (command !== "Finish") {
-            let result = input[index];
+            let result = input[index]; // Result: win or lose.
             index++;
 
             switch (result) {

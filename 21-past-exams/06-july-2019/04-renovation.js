@@ -9,7 +9,7 @@ function renovation(input) {
     let quota = Number(input[index]);
     index++;
 
-    let percentages = quota / 100;
+    let percentages = quota / 100; // The percentages of the room that will not be painted.
     let totalArea = 0;
     let areaForPainting = 0;
     let litersCount = 0;

@@ -3,12 +3,14 @@ function gameOfIntervals(input) {
 
     let result = 0;
 
-    let from0To9 = 0;
-    let from10To19 = 0;
-    let from20To29 = 0;
-    let from30To39 = 0;
-    let from40To50 = 0;
-    let invalidNum = 0;
+    let from0To9 = 0; // 1 number from the array
+    let from10To19 = 0; // 1 number from the array
+    let from20To29 = 0; // 2 numbers from the array
+    let from30To39 = 0; // 1 number from the array
+    let from40To50 = 0; // 3 numbers from the array
+    let invalidNum = 0; // 2 numbers from the array
+
+    // ^ These variables hold the number of numbers that fall into the corresponding intervals of the if-else construct.
 
     for(let i = 1; i <= moves; i++) {
         let num = Number(input[i]);

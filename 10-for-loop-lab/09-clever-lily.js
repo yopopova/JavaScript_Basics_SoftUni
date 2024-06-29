@@ -9,6 +9,7 @@ function cleverLily(input) {
     let income = 0;
 
     for (let currentBDay = 1; currentBDay <= age; currentBDay++) {
+        // ^ Loop up to and including the last birthday to catch all birthdays.
 
         if (currentBDay % 2 !== 0) {
             toysCounter++;

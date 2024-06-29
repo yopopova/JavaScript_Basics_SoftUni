@@ -22,6 +22,7 @@ function bestPlayer(input) {
         }
 
         command = input[index];
+        // index++; We don't raise because we raised above if we write it and here we raise 2 times and the code is wrong.
 
         goals = Number(input[index]);
         index++;

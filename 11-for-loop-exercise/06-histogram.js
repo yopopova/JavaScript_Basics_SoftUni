@@ -1,7 +1,7 @@
 function histogram(input) {
     let index = 0;
-    let n = Number(input[index]);
-    index++;
+    let n = Number(input[index]); // Here we take the value of the null element which is 3.
+    index++; // Here index is incremented and takes the value of the element at the first position, which in this case is 1.
 
     let p1Counter = 0;
     let p2Counter = 0;
@@ -10,7 +10,9 @@ function histogram(input) {
     let p5Counter = 0;
 
     for(let i = 0; i < n; i++) {
-        let currentNumber = Number(input[index]);
+        // ^ Since above we already removed the 1st element from the array => the 2nd element becomes first, so i = 0 to start from the first element, after regrouping the elements in the array.
+        
+        let currentNumber = Number(input[index]); // Here we take the value of index which was last from above in the first position which is 1.
         index++;
         
         if(currentNumber < 200) {

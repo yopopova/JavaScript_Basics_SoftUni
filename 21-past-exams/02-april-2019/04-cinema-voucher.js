@@ -8,7 +8,9 @@ function cinemaVoucher(input) {
     let ticketsCount = 0;
     let productsCount = 0;
 
-    for (let i = 0; i < input.length - 1; i++) {
+    for (let i = 0; i < input.length - 1; i++) { // So we take all the purchases until the end of the input, because we don't have another variable.
+        // ^ If i < input.length we write without - 1, at the end we will get another line that will say undefined.
+
         let purchase = input[index];
         index++;
 
@@ -26,7 +28,7 @@ function cinemaVoucher(input) {
                 ticketsCount++;
 
             } else {
-                price = purchase.charCodeAt(0);
+                price = purchase.charCodeAt(0); // Get the number/value of the character.
 
                 if (voucher >= price) {
                     voucher -= price;

@@ -2,7 +2,7 @@ function fuelTank(input) {
     let fuelType = input[0];
     let liters = Number(input[1]);
 
-    let fuel = fuelType.toLowerCase();
+    let fuel = fuelType.toLowerCase(); // Initialize a new variable to make all letters lowercase.
 
     if(fuel === "diesel" || fuel === "gasoline" || fuel === "gas") {
 

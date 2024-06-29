@@ -9,14 +9,14 @@ function sumPrimeNonPrime(input) {
     while(command !== "stop") {
         let num = Number(command);
 
-        if(num < 0) {
+        if(num < 0) { // Negative numbers.
             console.log("Number is negative.");
-            command = input[index];
+            command = input[index]; // Read a new number since the current one received is negative.
             index++
-            continue;
+            continue; // To skip the code down and move to the next number.
         }
 
-        if(num === 1) {
+        if(num === 1) { // The first prime a.k.a 1.
             sumPrimeNumbers += num;
             command = input[index];
             index++;
@@ -25,13 +25,13 @@ function sumPrimeNonPrime(input) {
 
         let isPrime = true;
 
-        for(let i = 2; i <= Math.sqrt(num); i++) {
+        for(let i = 2; i <= Math.sqrt(num); i++) { // We start at 2 because we already bypassed the 1 case above.
             if(num % i === 0) {
                 isPrime = false;
             }
         }
 
-        if(isPrime) {
+        if(isPrime) { // We check if the number is prime.
             sumPrimeNumbers += num;
         } else {
             sumNonPrimeNumbers += num;

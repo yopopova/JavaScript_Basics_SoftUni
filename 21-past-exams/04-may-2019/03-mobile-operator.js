@@ -60,7 +60,7 @@ function mobileOperator(input) {
         }
 
         totalAmount = months * fee;
-        totalAmount = (totalAmount * 96.25) / 100;
+        totalAmount = (totalAmount * 96.25) / 100; // 96,25 = 100% - 3,75%;
     }
 
     console.log(`${totalAmount.toFixed(2)} lv.`);

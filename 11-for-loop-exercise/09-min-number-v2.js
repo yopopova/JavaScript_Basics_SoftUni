@@ -3,7 +3,7 @@ function minNumber(input) {
     let n = Number(input[index]);
     index++;
 
-    let min = Number(input[index]);
+    let min = Number(input[index]); // So it takes the first number from the array and starts comparing against it.
     index++;
 
     for(let i = 1; i < n; i++) {

@@ -2,11 +2,11 @@ function equalSumsEvenOddPosition(input) {
     let startNumber = Number(input[0]);
     let endNumber = Number(input[1]);
 
-    let buffer = "";
+    let buffer = ""; // We need a variable with which to print things on a single line, in this case buffer.
 
     for (let i = startNumber; i <= endNumber; i++) {
-        let numberToString = i + " ";
-        let numberToStringL = numberToString.length;
+        let numberToString = i + " "; // This is how we convert the number to text. Here we also take a space in the quotation marks.
+        let numberToStringL = numberToString.length; // Lock the length in a variable so the program doesn't calculate it every time.
 
         let sumOddPosition = 0;
         let sumEvenPosition = 0;
@@ -20,7 +20,8 @@ function equalSumsEvenOddPosition(input) {
         }
 
         if(sumOddPosition === sumEvenPosition) {
-            buffer += numberToString + "";
+            buffer += numberToString + ""; // This is how we paste the numbers to be on the same line, because in JS everything comes out one below the other.
+            // ^ If we write numberToString + "" directly to console.log, it will still print them one below the other, which makes no sense.
         }
     }
 

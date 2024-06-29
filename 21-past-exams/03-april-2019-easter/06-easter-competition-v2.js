@@ -17,7 +17,7 @@ function easterCompetition(input) {
         while (command !== "Stop") {
             let vote = Number(command);
 
-            if (vote <= 0 || vote > 10) {
+            if (vote <= 0 || vote > 10) { // This check insures that the program will only calculate scores from 1 to 10 - the rest are invalid.
                 command = input[index];
                 index++;
                 continue;

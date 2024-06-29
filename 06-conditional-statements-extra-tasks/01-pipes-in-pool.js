@@ -1,7 +1,7 @@
 function pipesInPool(input) {
     let v = Number(input[0]);
-    let p1 = Number(input[1]);
-    let p2 = Number(input[2]);
+    let p1 = Number(input[1]); // The liters of water for 1 hour.
+    let p2 = Number(input[2]); // The liters of water for 1 hour.
     let h = Number(input[3]);
 
     let plumb1 = p1 * h;

@@ -19,6 +19,8 @@ function backToThePast(input) {
 
     if(heritage < 0) {
         heritage = Math.abs(heritage);
+        // ^ Math.abs must be output on a separate line, not console.log, because we can't take an absolute value from a string.
+
         console.log(`He will need ${heritage.toFixed(2)} dollars to survive.`);
     } else {
         console.log(`Yes! He will live a carefree life and will have ${heritage.toFixed(2)} dollars left.`);

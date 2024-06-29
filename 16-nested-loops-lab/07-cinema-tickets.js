@@ -3,11 +3,14 @@ function cinemaTickets(input) {
     let inputLine = input[index];
     index++;
 
-    let standartTickets = 0;
-    let studentTickets = 0;
-    let kidTickets = 0;
+    // With finish is the external counter that means the movies have finished.
+    // With end is the internal counter that means free seats have ended.
 
-    while (inputLine !== "Finish") {
+    let standartTickets = 0; // Counter.
+    let studentTickets = 0; // Counter.
+    let kidTickets = 0; // Counter.
+
+    while (inputLine !== "Finish") { // Here we enter a specific movie.
         let movieName = inputLine;
 
         let allTickets = Number(input[index]);
@@ -18,7 +21,7 @@ function cinemaTickets(input) {
         let ticketType = input[index];
         index++;
 
-        while (ticketType !== "End") {
+        while (ticketType !== "End") { // Here we enter a specific ticket type.
 
             if (ticketType === "standard") {
                 standartTickets++;
@@ -28,9 +31,9 @@ function cinemaTickets(input) {
                 kidTickets++;
             }
 
-            availableTickets--;
+            availableTickets--; // We decrement the number of free tickets each time a ticket is bought on the loop.
 
-            if (availableTickets === 0) {
+            if (availableTickets === 0) { // If the tickets become 0, we need to break the loop because there's no point in looping.
                 break;
             }
 
@@ -38,7 +41,7 @@ function cinemaTickets(input) {
             index++;
         }
 
-        let boughtTickets = allTickets - availableTickets;
+        let boughtTickets = allTickets - availableTickets; // To see how many tickets have been purchased.
         let percentageFull = (boughtTickets / allTickets) * 100;
 
         console.log(`${movieName} - ${percentageFull.toFixed(2)}% full.`);

@@ -1,20 +1,20 @@
 function traveling(input) {
     let index = 0;
-    let text = input[index];
+    let text = input[index]; // The destination.
     index++;
 
     while (text !== "End") {
         let destination = text;
 
-        let money = Number(input[index]);
+        let money = Number(input[index]); // The budget.
         index++;
 
         let budget = money;
 
-        let savedMoney = 0;
+        let savedMoney = 0; // Number of money saved.
 
         while(budget > 0) {
-            let currentMoney = Number(input[index]);
+            let currentMoney = Number(input[index]); // The money that comes in when the array is rotated.
             index++
 
             budget -= currentMoney;
@@ -29,7 +29,7 @@ function traveling(input) {
             console.log(`Going to ${destination}!`);
         }
 
-        text = input[index];
+        text = input[index]; // The destination.
         index++;
     }
 }

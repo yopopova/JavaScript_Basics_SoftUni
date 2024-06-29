@@ -16,6 +16,10 @@ function theSongOfTheWheels(input) {
                     if((a * b) + (c * d) === num) {
                         if(a < b && c > d) {
                             buffer += "" + a + b + c + d + " ";
+
+                            // buffer += "" + a + b + c + d + " ";
+                            // console.log(buffer);
+                            // ^ With these two lines in the loop, the numbers are printed in the shape of a pyramid!!!
                         
                             passCounter++;
 

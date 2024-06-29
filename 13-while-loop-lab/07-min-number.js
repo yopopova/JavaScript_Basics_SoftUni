@@ -1,5 +1,5 @@
 function minNumber(input) {
-    let minNum = Number.MAX_SAFE_INTEGER;
+    let minNum = Number.MAX_SAFE_INTEGER; // We guarantee that this is the biggest number we can get.
 
     let index = 0;
     let command = input[index];

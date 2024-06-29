@@ -6,7 +6,7 @@ function sumOfNumbers(input) {
 
     for(let i = 0; i < textLength; i++) {
         let currentNumber = Number(textNumber[i]);
-        sum += currentNumber;
+        sum += currentNumber; // sum = sum + currentNumber
     }
 
     console.log(`The sum of the digits is:${sum}`);

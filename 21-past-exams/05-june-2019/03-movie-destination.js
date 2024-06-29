@@ -16,7 +16,7 @@ function movieDestination(input) {
         }
 
         totalPrice = days * price;
-        totalPrice = totalPrice * 0.7;
+        totalPrice = totalPrice * 0.7; // Decrease by 25%
         
     } else if(destination === "Sofia") {
 
@@ -27,7 +27,7 @@ function movieDestination(input) {
         }
 
         totalPrice = days * price;
-        totalPrice = totalPrice * 1.25;
+        totalPrice = totalPrice * 1.25; // Make it more expensive with 25%
         
     } else if(destination === "London") {
 

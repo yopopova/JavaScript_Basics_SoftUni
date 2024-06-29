@@ -26,7 +26,7 @@ function travelAgency(input) {
             }
         } else {
             console.log("Invalid input!");
-            return;
+            return; // To stop there and not do any other checks!
         }
 
     } else if(town === "Varna" || town === "Burgas") {
@@ -43,13 +43,13 @@ function travelAgency(input) {
                 price = price * 0.93;
             }
         } else {
-            console.log("Invalid input!");
-            return;
+            console.log("Invalid input!"); // If a city other than the 4 cities described is entered.
+            return; // To stop there and not do any other checks!
         }
 
     } else {
         console.log("Invalid input!");
-        return;
+        return; // To stop there and not do any other checks!
     }
 
     if(days <= 0) {

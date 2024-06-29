@@ -2,7 +2,7 @@ function leapYears(input) {
     let firstYear = Number(input[0]);
     let secondYear = Number(input[1]);
 
-    for(let year = firstYear; year <= secondYear; year += 4) {
+    for(let year = firstYear; year <= secondYear; year += 4) { // year = year + 4;
         console.log(year);
     }  
 }

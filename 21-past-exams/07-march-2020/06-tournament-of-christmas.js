@@ -9,7 +9,7 @@ function tournamentOfChristmas(input) {
     let donations = 0;
 
     for (let i = 1; i <= days; i++) {
-        let command = input[index];
+        let command = input[index]; // Sports
         index++
 
         let wins = 0;
@@ -18,7 +18,7 @@ function tournamentOfChristmas(input) {
         let dayDonations = 0;
 
         while (command !== "Finish") {
-            let result = input[index];
+            let result = input[index]; // Result: win или lose.
             index++;
 
             switch (result) {

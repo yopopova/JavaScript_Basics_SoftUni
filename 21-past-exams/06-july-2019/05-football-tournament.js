@@ -33,6 +33,7 @@ function footballTournament(input) {
         pointsCounter += points;
 
         result = input[index];
+        // index++; In this case we don't raise because the variable will start reading the array elements through one.
     }
 
     let winRate = (wCount / matches) * 100;

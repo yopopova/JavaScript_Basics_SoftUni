@@ -1,15 +1,15 @@
 function highJump(input) {
     let index = 0;
-    let startHeight = Number(input[index]);
+    let startHeight = Number(input[index]); // The initial height of the bar that comes in from the array.
     index++;
 
-    let height = startHeight - 30;
+    let height = startHeight - 30; // The height of the bar to which we will compare the height of the jump.
 
-    let jumpHeight = Number(input[index]);
+    let jumpHeight = Number(input[index]); // The height of the jump to compare to.
     index++;
 
-    let failedJumpCount = 0;
-    let allJumpsCounter = 1;
+    let failedJumpCount = 0; // Counter of failed hops.
+    let allJumpsCounter = 1; // Counter for the jumps. We start at 1, not 0, because we've already read one jump from the array.
 
     while(true) {
 

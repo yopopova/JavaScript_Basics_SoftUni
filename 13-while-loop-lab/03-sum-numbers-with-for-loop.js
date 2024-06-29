@@ -8,6 +8,12 @@ function sumNumbers(input) {
 
     for(let i = 1; i < inputL; i++) {
         sum += Number(input[i]);
+
+        // if(sum >= target) {
+        //     break;
+        // }
+
+        // ^ In this task, it is not mandatory, but in principle it is good to have the if check with break.
     }
 
     console.log(sum);

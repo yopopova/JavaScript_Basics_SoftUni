@@ -3,7 +3,7 @@ function minNumber(input) {
     let n = Number(input[index]);
     index++;
 
-    let min = Number.MAX_SAFE_INTEGER;
+    let min = Number.MAX_SAFE_INTEGER; // The largest possible number we can get.
 
     for(let i = 0; i < n; i++) {
         let num = Number(input[index]);

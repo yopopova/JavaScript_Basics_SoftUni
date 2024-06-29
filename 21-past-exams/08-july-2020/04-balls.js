@@ -3,7 +3,7 @@ function balls(input) {
     let allBalls = Number(input[index]);
     index++;
 
-    let points = 0;
+    let points = 0; // Will add up the points for each ball of a different color.
 
     let redBalls = 0;
     let orangeBalls = 0;
@@ -30,7 +30,7 @@ function balls(input) {
             whiteBalls++;
         } else if(color === "black") {
             points = points / 2;
-            points = Math.floor(points);
+            points = Math.floor(points); // From Math library. are always exported on a new line, otherwise they create irregularities in the code.
             blackBalls++;
         } else {
             otherBalls++;

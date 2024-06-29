@@ -11,13 +11,13 @@ function favoriteMovie(input) {
         let movieName = command;
         movieCounter++;
 
-        let points = 0;
+        let points = 0; // The points each movie will collect.
 
         let movieNameL = movieName.length;
 
         for(let i = 0; i < movieNameL; i++) {
-            let letter = movieName[i];
-            let symbol = letter.charCodeAt(0);
+            let letter = movieName[i]; // So we take each character individually.
+            let symbol = letter.charCodeAt(0); // This is how we get the number of the specific symbol.
             points += symbol;
 
             if(letter === " ") {

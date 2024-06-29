@@ -33,9 +33,9 @@ function skiTrip(input) {
     }
 
     if(feedback === "positive") {
-        priceForAllNights = priceForAllNights * 1.25;
+        priceForAllNights = priceForAllNights * 1.25; // Add 25% to the 100% we already have.
     } else if(feedback === "negative") {
-        priceForAllNights = priceForAllNights * 0.9;
+        priceForAllNights = priceForAllNights * 0.9; // Remove 10% from the 100% we already have.
     }
 
     console.log(`${priceForAllNights.toFixed(2)}`);

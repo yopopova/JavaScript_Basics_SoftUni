@@ -21,7 +21,7 @@ function hospital(input) {
             treatedPatients += doctors;
             untreatedPatients = untreatedPatients + (patientsPerDay - doctors);
         } else {
-            treatedPatients += doctors;
+            treatedPatients += doctors; // If patients are equal to doctors.
         }      
     }
             

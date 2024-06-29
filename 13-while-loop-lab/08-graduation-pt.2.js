@@ -1,15 +1,15 @@
 function graduation(input) {
     let index = 0;
     let name = input[index];
-    index++;
+    index++; // We write it completely when we read something from the input, in this case what we read is index = 0.
 
     let level = 1;
 
-    let score = 0;
-    let error = 0;
+    let score = 0; // Collects the grades over the years.
+    let error = 0; // Count the number of times the student was interrupted.
 
     while(level <= 12) {
-        let grade = Number(input[index]);
+        let grade = Number(input[index]); // The variable is defined inside the loop because the while condition does not depend on it, but on other values.
         index++;
 
         if(grade >= 4.00) {

@@ -42,7 +42,7 @@ function worldSnookerChampionship(input) {
         ticketsPrice = ticketsPrice * 0.75;
 
     } else if(ticketsPrice > 2500) {
-        ticketsPrice = ticketsPrice * 0.9;
+        ticketsPrice = ticketsPrice * 0.9; // This is equal to ticketsPrice = ticketsPrice - (ticketsPrice * 0.1);
 
         if(trophyPic === "Y") {
             trophyPicPrice = ticketsCount * 40;

@@ -9,8 +9,8 @@ function movieStars(input) {
     let actorSalary = 0;
 
     while (command !== "ACTION") {
-        let actorName = command;
-        let actorNameLength = actorName.length;
+        let actorName = command; // We get the name of each actor from the command.
+        let actorNameLength = actorName.length; // We take the length of each actor's name individually.
 
         if(actorNameLength > 15) {
             actorSalary = budget * 0.2;

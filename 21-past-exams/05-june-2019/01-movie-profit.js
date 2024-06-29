@@ -5,11 +5,11 @@ function movieProfit(input) {
     let ticketPrice = Number(input[3]);
     let cinemaPerc = Number(input[4]);
 
-    let totalTicketsPrice = tickets * ticketPrice;
+    let totalTicketsPrice = tickets * ticketPrice; // The price of all tickets for the day.
 
-    let totalIncome = totalTicketsPrice * days;
+    let totalIncome = totalTicketsPrice * days; // The sum of all tickets for the specific days.
 
-    let cinemaFee = totalIncome * cinemaPerc / 100;
+    let cinemaFee = totalIncome * cinemaPerc / 100; // The percentage for the cinema.
     let movieIncome = totalIncome - cinemaFee;
 
     console.log(`The profit from the movie ${movie} is ${movieIncome.toFixed(2)} lv.`);

@@ -10,35 +10,35 @@ function newHouse(input) {
             money = countFlowers * 5;
 
             if(countFlowers > 80) {
-                money = money * 0.90;
+                money = money * 0.90; // Remove 10%
             }
             break;
         case "Dahlias":
             money = countFlowers * 3.80;
 
             if(countFlowers > 90) {
-                money = money * 0.85;
+                money = money * 0.85; // Remove 15%
             }
             break;
         case "Tulips":
             money = countFlowers * 2.80;
 
             if(countFlowers > 80) {
-                money = money * 0.85;
+                money = money * 0.85; // Remove 15%
             }
             break;
         case "Narcissus":
             money = countFlowers * 3;
 
             if(countFlowers < 120) {
-                money = money * 1.15;
+                money = money * 1.15; // Increases the price by 15%
             }
             break;
         case "Gladiolus":
             money = countFlowers * 2.50;
 
             if(countFlowers < 80) {
-                money = money * 1.20;
+                money = money * 1.20; // Increases the price by 15%
             }
             break;
     }

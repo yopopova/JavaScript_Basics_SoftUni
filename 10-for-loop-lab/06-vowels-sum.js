@@ -5,7 +5,9 @@ function vowelsSum(input) {
     let sum = 0;
 
     for(let i = 0; i < wordLength; i++) {
-        let ch = word.charAt(i);
+        // console.log(word.charAt(i)); Returns each character individually.
+        
+        let ch = word.charAt(i); // == let ch = word[i];
 
         switch(ch) {
             case "a" : sum += 1; break;

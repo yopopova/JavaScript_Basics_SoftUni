@@ -11,8 +11,8 @@ function safePasswordsGenerator(input) {
 
     for(let a = 1; a <= num1; a++) {
         for(let b = 1; b <= num2; b++) {
-            let characterOne = String.fromCharCode(symbol1);
-            let characterTwo = String.fromCharCode(symbol2);
+            let characterOne = String.fromCharCode(symbol1); // Here we take the character that corresponds to the corresponding number from the ASCII table.
+            let characterTwo = String.fromCharCode(symbol2); // Here we take the character that corresponds to the corresponding number from the ASCII table.
 
             buffer += "" + characterOne + characterTwo + a + b + characterTwo + characterOne + "|";
             passwordsCounter++;

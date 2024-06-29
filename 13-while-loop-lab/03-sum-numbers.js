@@ -9,6 +9,12 @@ function sumNumbers(input) {
     while (index < inputL) {
         sum += Number(input[index]);
 
+        // if(sum >= target) {
+        //     break;
+        // }
+
+        // ^ In this task, it is not mandatory, but in principle it is good to have the if check with break.
+
         index++;
     }
 

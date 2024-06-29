@@ -1,7 +1,7 @@
 function volleyball(input) {
     let yearType = input[0];
     let holidaysInYear = Number(input[1]);
-    let weekendsTraveling = Number(input[2]);
+    let weekendsTraveling = Number(input[2]); // Hometown weekends.
 
     let weekendsSofia = 48 - weekendsTraveling;
     let gamesSofia = weekendsSofia * 3 / 4;
@@ -15,7 +15,6 @@ function volleyball(input) {
     } else if(yearType === "normal") {
         console.log(Math.floor(allGames));
     }
-
 }
 
 volleyball(["leap", "5", "2"]);

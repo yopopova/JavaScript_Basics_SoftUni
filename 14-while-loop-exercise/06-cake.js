@@ -11,7 +11,7 @@ function cake(input) {
     let command = input[index];
     index++;
 
-    let isCake = true;
+    let isCake = true; // Here we have a cake.
 
     while(command !== "STOP") {
         let pieces = Number(command);
@@ -19,7 +19,7 @@ function cake(input) {
         cakeSize -= pieces;
 
         if(cakeSize < 0) {
-            isCake = false;
+            isCake = false; // Here the cake is finished.
             console.log(`No more cake left! You need ${Math.abs(cakeSize)} pieces more.`);
             break;
         }
@@ -28,7 +28,7 @@ function cake(input) {
         index++;
     }
 
-    if(isCake) {
+    if(isCake) { // Either command === "STOP", or cakeSize >= 0 - options to write the condition
         console.log(`${cakeSize} pieces are left.`);
     }
 }

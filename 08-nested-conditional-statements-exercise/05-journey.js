@@ -3,7 +3,7 @@ function journey(input) {
     let season  = input[1];
 
     let destination = "";
-    let type = "";
+    let type = ""; // For the place where he will rest - hotel or camping.
     let money = 0;
 
     if(budget <= 100) {

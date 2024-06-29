@@ -4,9 +4,9 @@ function skeleton(input) {
     let wayInMeters = Number(input[2]);
     let secForOnehundredMeters = Number(input[3]);
 
-    let recordSeconds = (controlMin * 60) + controlSec;
+    let recordSeconds = (controlMin * 60) + controlSec; // Convert the minutes of the record to seconds to get the entire record in seconds.
 
-    let decreasingTime = (wayInMeters / 120) * 2.5;
+    let decreasingTime = (wayInMeters / 120) * 2.5; // By how many seconds does Marin's time decrease, due to delay.
 
     let marinTime = (wayInMeters / 100) * secForOnehundredMeters - decreasingTime;
 

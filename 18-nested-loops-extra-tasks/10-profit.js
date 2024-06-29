@@ -4,7 +4,7 @@ function profit(input) {
     let fiveLeva = Number(input[2]);
     let sum = Number(input[3]);
 
-    for(let a = 0; a <= oneLevCoins; a++) {
+    for(let a = 0; a <= oneLevCoins; a++) { // Loops play the role of coin and banknote counters.
         for(let b = 0; b <= twoLevaCoins; b++) {
             for(let c = 0; c <= fiveLeva; c++) {
                 let currentSum = (a * 1) + (b * 2) + (c * 5);

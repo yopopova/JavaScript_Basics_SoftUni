@@ -1,6 +1,6 @@
 function mobileOperator(input) {
-    let duration = input[0];
-    let type = input[1];
+    let duration = input[0]; // Contract duration.
+    let type = input[1]; // Contract type.
     let internetStatus = input[2];
     let monthsForPayment = Number(input[3]);
 

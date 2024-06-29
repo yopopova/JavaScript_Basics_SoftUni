@@ -1,7 +1,10 @@
 function coins(input) {
     let money = Number(input[0]);
 
-    let moneyInCoins = Math.floor(money * 100);
+    let moneyInCoins = Math.floor(money * 100); // We convert levs into pennies to work with 1 unit of measure.
+    // ^ In this way, we work entirely with whole numbers, because the program gives errors with fractional numbers.
+    // ^ We write Math.floor, because otherwise it will return a fractional number again, which does not work for us.
+    // This is a problem in computers, so the libraries in question are used. There's a code out there that's already been set by someone, and we're just using it.
     
     let counter = 0;
 

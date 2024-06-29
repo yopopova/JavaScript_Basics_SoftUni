@@ -3,14 +3,14 @@ function changeBureau(input) {
     let yuans = Number(input[1]);
     let commission = Number(input[2]);
 
-    let bitcoinAmount = bitcoins * 1168;
+    let bitcoinAmount = bitcoins * 1168; // Convert bitcoins to leva.
 
-    let usd = yuans * 0.15;
-    let bgn = usd * 1.76;
+    let usd = yuans * 0.15; // Convert yuan to dollars.
+    let bgn = usd * 1.76; // Convert dollars into leva.
 
     let totalBgnAmount = bitcoinAmount + bgn;
-    let euro = totalBgnAmount / 1.95;
-    let commissionInPercent = commission / 100;
+    let euro = totalBgnAmount / 1.95; // Find the euro.
+    let commissionInPercent = commission / 100; // Find the commission rate.
 
     let totalEuro = euro - (euro * commissionInPercent);
 

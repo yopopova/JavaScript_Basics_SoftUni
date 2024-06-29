@@ -24,7 +24,7 @@ function foodForPets(input) {
 
         if(i % 3 === 0) {
             currentBiscuits = (dogFood + catFood) * 0.1;
-            biscuits += currentBiscuits;
+            biscuits += currentBiscuits; // We must collect the current cookies, because if we have 6 days, for example, and we don't collect them, the program will show us the same number on each rotation of the loop.
         }
     }
 

@@ -9,8 +9,8 @@ function gameNumberWars(input) {
     let playerOnePoints = 0;
     let playerTwoPoints = 0;
 
-    let oneTotalPoints = 0;
-    let twoTotalPoints = 0;
+    let oneTotalPoints = 0; // Holds the endpoints of the 1st player.
+    let twoTotalPoints = 0; // Holds the endpoints of the 2nd player.
 
     for (let i = 0; i < input.length - 1; i++) {
         let cardOne = input[index];
@@ -30,7 +30,10 @@ function gameNumberWars(input) {
                 playerTwoPoints = cardTwo - cardOne;
                 twoTotalPoints += playerTwoPoints;
 
-            } else if (cardOne === cardTwo) {
+            } else if (cardOne === cardTwo) { // Here the values ​​of both cards are equal.
+                // Once we have received two cards with the same value
+                // first we draw two new cards and then compare them to see who is the winner.
+
                 cardOne = Number(input[index]);
                 index++;
 

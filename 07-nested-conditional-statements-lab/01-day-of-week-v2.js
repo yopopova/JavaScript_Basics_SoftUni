@@ -9,7 +9,7 @@ function dayOfWeek(input) {
         case 5 : console.log("Friday"); break;
         case 6 : console.log("Saturday"); break;
         case 7 : console.log("Sunday"); break;
-        default: console.log("Error"); break;
+        default: console.log("Error"); break; // It's nice to have break after default too! Default can be at the beginning and at the end of the code.
     }
 }
 

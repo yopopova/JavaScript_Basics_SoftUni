@@ -11,7 +11,7 @@ function trekkingMania(input) {
 
     let allPeople = 0;
 
-    for(let i = 0; i < allGroups; i++) {
+    for(let i = 0; i < allGroups; i++) { // If i = 1, then i <= groups !!!
         let group = Number(input[index]);
         index++;
 

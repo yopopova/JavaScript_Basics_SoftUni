@@ -6,16 +6,16 @@ function building(input) {
     let rooms = Number(input[index]);
     index++;
 
-    for (let i = floors; i >= 1; i--) {
+    for (let i = floors; i >= 1; i--) { // Floors.
         let apartmentNum = " ";
 
-        for (let j = 0; j < rooms; j++) {
+        for (let j = 0; j < rooms; j++) { // Rooms per floor.
             if (i === floors) {
                 apartmentNum += `L${i}${j} `;
             } else {
-                if (i % 2 !== 0) {
+                if (i % 2 !== 0) { // Odd floors.
                     apartmentNum += `A${i}${j} `;
-                } else {
+                } else { // Even floors.
                     apartmentNum += `O${i}${j} `;
                 }
             }

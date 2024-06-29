@@ -3,22 +3,22 @@ function streamOfLetters(input) {
     let command = input[index];
     index++;
 
-    let startSmallLetter = "a".charCodeAt(0);
-    let endSmallLetter = "z".charCodeAt(0);
+    let startSmallLetter = "a".charCodeAt(0); // We get the beginning of the lowercase letters.
+    let endSmallLetter = "z".charCodeAt(0); // We take the end of the lowercase letters.
 
-    let startCapitalLetter = "A".charCodeAt(0);
-    let endCapitalLetter = "Z".charCodeAt(0);
+    let startCapitalLetter = "A".charCodeAt(0); // We take the beginning of uppercase letters.
+    let endCapitalLetter = "Z".charCodeAt(0); // We take the end of the uppercase letters.
 
-    let countC = 0;
-    let countO = 0;
-    let countN = 0;
+    let countC = 0; // Count how many times we have encountered a Latin letter "c".
+    let countO = 0; // Count how many times we have encountered a Latin letter "o".
+    let countN = 0; // Count how many times we have encountered a Latin letter "n".
 
-    let letter = "";
-    let word = "";
+    let letter = ""; // We take each letter.
+    let word = ""; // Get the individual words.
 
     while (command !== "End") {
-        let symbol = command.charAt(0);
-        let numLetter = symbol.charCodeAt(0);
+        let symbol = command.charAt(0); // We take each letter as a character.
+        let numLetter = symbol.charCodeAt(0); // Convert each character to its number from the ASCII table.
 
         if (numLetter >= startSmallLetter && numLetter <= endSmallLetter || numLetter >= startCapitalLetter && numLetter <= endCapitalLetter) {
 
@@ -32,11 +32,11 @@ function streamOfLetters(input) {
                 letter += symbol;
             }
 
-            if (countC + countO + countN === 3) {
+            if (countC + countO + countN === 3) { // Check if we've already encountered all three letters.
                 word += letter;
-                word += " ";
+                word += " "; // Add a space after the word.
 
-                letter = "";
+                letter = ""; // Reset all counters.
                 countC = 0;
                 countO = 0;
                 countN = 0;

@@ -2,10 +2,10 @@ function seriesCalculator(input) {
     let show = input[0];
     let seasons = Number(input[1]);
     let episodes = Number(input[2]);
-    let episodeTime = Number(input[3]);
+    let episodeTime = Number(input[3]); // The duration of the episode without the ads.
 
     let ads = episodeTime * 0.2;
-    let finalEpisodeTime = episodeTime + ads;
+    let finalEpisodeTime = episodeTime + ads; // The duration of the episode with the ads.
 
     let specialEpisodesTime = seasons * 10;
 

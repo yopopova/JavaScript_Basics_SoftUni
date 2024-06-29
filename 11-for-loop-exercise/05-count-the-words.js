@@ -1,6 +1,6 @@
 function countTheWords(input) {
     let text = input[0];
-    let counter = 1;
+    let counter = 1; // We start at 1 because otherwise it would take us 1 less space.
 
     for(let i = 0; i < text.length; i++) {
         if(text[i] === " ") {

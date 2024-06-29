@@ -1,7 +1,7 @@
 function lettersCombinations(input) {
-    let startLetter = input[0].charCodeAt();
-    let endLetter = input[1].charCodeAt();
-    let exceptionLetter = input[2].charCodeAt();
+    let startLetter = input[0].charCodeAt(); // So we take the letter from the array and convert it to its corresponding value from the ASCII table.
+    let endLetter = input[1].charCodeAt(); // So we take the letter from the array and convert it to its corresponding value from the ASCII table.
+    let exceptionLetter = input[2].charCodeAt(); // So we take the letter from the array and convert it to its corresponding value from the ASCII table.
 
     let counter = 0;
     let buffer = "";
@@ -11,9 +11,9 @@ function lettersCombinations(input) {
             for(let c = startLetter; c <= endLetter; c++) {
 
                 if(a !== exceptionLetter && b !== exceptionLetter && c !== exceptionLetter) {
-                    let letterA = String.fromCharCode(a);
-                    let letterB = String.fromCharCode(b);
-                    let letterC = String.fromCharCode(c);
+                    let letterA = String.fromCharCode(a); // Here we convert the number from the ASCII table back to a letter to print it.
+                    let letterB = String.fromCharCode(b); // Here we convert the number from the ASCII table back to a letter to print it.
+                    let letterC = String.fromCharCode(c); // Here we convert the number from the ASCII table back to a letter to print it.
 
                     buffer += "" + letterA + letterB + letterC + " ";
                     counter++;
