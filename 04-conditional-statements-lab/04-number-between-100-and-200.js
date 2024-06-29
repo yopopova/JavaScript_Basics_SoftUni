@@ -9,3 +9,7 @@ function numberBetween(input) {
         console.log("Greater than 200");
     }
 }
+
+numberBetween(["95"]);
+numberBetween(["120"]);
+numberBetween(["210"]);

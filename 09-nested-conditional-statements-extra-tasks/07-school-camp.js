@@ -71,7 +71,6 @@ function schoolCamp(input) {
             console.log(`Swimming ${totalPrice.toFixed(2)} lv.`);
         }
     }
-
 }
 
 schoolCamp(["Spring", "girls", "20", "7"]);

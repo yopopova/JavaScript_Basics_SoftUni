@@ -5,3 +5,8 @@ function celsiusToFahrenheit(input) {
 
     console.log(f.toFixed(2));
 }
+
+celsiusToFahrenheit(["25"]);
+celsiusToFahrenheit(["0"]);
+celsiusToFahrenheit(["-5.5"]);
+celsiusToFahrenheit(["32.3"]);

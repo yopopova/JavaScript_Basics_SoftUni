@@ -27,7 +27,6 @@ function moving(input) {
     } else {
         console.log(`${volume - sum} Cubic meters left.`);
     }
-
 }
 
 moving(["10", "10", "2", "20", "20", "20", "20", "122"]);

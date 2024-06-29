@@ -13,3 +13,6 @@ function charity(input) {
     result -= 1/8 * result;
     console.log(result);
 }
+
+charity(["23", "8", "14", "30", "16"]);
+charity(["131", "5", "9", "33", "46"]);

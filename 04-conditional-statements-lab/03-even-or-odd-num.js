@@ -7,3 +7,8 @@ function evenOrOdd(input) {
         console.log("odd");
     } 
 }
+
+evenOrOdd(["2"]);
+evenOrOdd(["3"]);
+evenOrOdd(["25"]);
+evenOrOdd(["1024"]);

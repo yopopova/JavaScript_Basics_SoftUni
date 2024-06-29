@@ -16,7 +16,6 @@ function skeleton(input) {
     } else {
         console.log(`No, Marin failed! He was ${(marinTime - recordSeconds).toFixed(3)} second slower.`);
     }
-
 }
 
 skeleton(["2", "12", "1200", "10"]);

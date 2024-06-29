@@ -24,3 +24,7 @@ function metricConverter(input){
 
     console.log(result.toFixed(3));
 }
+
+metricConverter(["12","mm","m"]);
+metricConverter(["150","m","cm"]);
+metricConverter(["45","cm","mm"]);

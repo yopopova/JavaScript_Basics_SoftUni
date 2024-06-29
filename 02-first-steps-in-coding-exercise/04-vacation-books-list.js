@@ -8,3 +8,6 @@ function vacationBookList(input) {
 
     console.log(hoursPerDay);
 }
+
+vacationBookList(["212", "20", "2"]);
+vacationBookList(["432", "15", "4"]);

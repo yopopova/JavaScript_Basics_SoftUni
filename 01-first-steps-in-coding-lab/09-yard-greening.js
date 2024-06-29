@@ -8,3 +8,6 @@ function gardening(input) {
     console.log(`The final price is: ${finalResult} lv.`);
     console.log(`The discount is: ${discount} lv.`);
 }
+
+gardening(["550"]);
+gardening(["150"]);

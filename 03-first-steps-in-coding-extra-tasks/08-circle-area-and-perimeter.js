@@ -7,3 +7,6 @@ function circleAreaAndPerimeter(input) {
     console.log(circleFace.toFixed(2));
     console.log(circlePerimeter.toFixed(2));
 }
+
+circleAreaAndPerimeter(["3"]);
+circleAreaAndPerimeter(["4.5"]);

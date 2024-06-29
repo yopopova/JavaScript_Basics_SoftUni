@@ -6,3 +6,8 @@ function concatenateData(input) {
 
     console.log(`You are ${firstName} ${lastName}, a ${age}-years old person from ${town}.`);
 }
+
+concatenateData(['Maria', 'Ivanova', '19', 'Pleven']);
+// concatenateData(['Peter', 'Nikolov', '22', 'Varna']);
+// concatenateData(['Светлин', 'Наков', '29', 'Велико Търново']);
+// concatenateData(['Geek', 'Coder', '15', 'Codeland']);

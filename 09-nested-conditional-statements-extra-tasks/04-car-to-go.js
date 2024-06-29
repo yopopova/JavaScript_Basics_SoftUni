@@ -32,7 +32,6 @@ function carToGo(input) {
         console.log(`Jeep - ${price.toFixed(2)}`);
 
     }
-
 }
 
 carToGo(["450", "Summer"]);

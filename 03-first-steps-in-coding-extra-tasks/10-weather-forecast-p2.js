@@ -15,3 +15,9 @@ function weatherForecastP2(input) {
         console.log("unknown");
     }
 }
+
+weatherForecastP2(["16.5"]);
+weatherForecastP2(["8"]);
+weatherForecastP2(["22.4"]);
+weatherForecastP2(["26"]);
+weatherForecastP2(["0"]);

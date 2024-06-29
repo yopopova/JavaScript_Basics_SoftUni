@@ -52,8 +52,7 @@ function fishingBoat(input) {
         console.log(`Yes! You have ${diff.toFixed(2)} leva left.`);
     } else {
         console.log(`Not enough money! You need ${diff.toFixed(2)} leva.`);
-    }
-    
+    }   
 }
 
 fishingBoat(["3000", "Summer", "11"]);

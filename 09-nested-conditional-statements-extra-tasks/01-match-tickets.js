@@ -35,7 +35,6 @@ function matchTickets(input) {
     } else {
         console.log(`Not enough money! You need ${moneyMiss.toFixed(2)} leva.`);
     }
-
 }
 
 matchTickets(["1000", "Normal", "1"]);

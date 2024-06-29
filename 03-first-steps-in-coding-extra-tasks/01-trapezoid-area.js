@@ -7,3 +7,5 @@ function trapezoidArea(input) {
 
     console.log(face.toFixed(2));
 }
+
+trapezoidArea(["8", "13", "7"]);

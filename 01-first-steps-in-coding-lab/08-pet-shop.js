@@ -8,3 +8,6 @@ function petShop(input) {
     let totalAmount = dogsFoodAmount + otherAnimalsAmount;
     console.log(`${totalAmount} lv.`);
 }
+
+petShop(["5", "4"]);
+petShop(["13", "9"]);

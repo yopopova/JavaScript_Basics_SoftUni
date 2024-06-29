@@ -25,7 +25,6 @@ function backToThePast(input) {
     } else {
         console.log(`Yes! He will live a carefree life and will have ${heritage.toFixed(2)} dollars left.`);
     }
-
 }
 
 backToThePast(["50000", "1802"]);

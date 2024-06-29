@@ -18,7 +18,6 @@ function dayOfWeek(input) {
     } else {
         console.log("Error");
     }
-
 }
 
 dayOfWeek(["1"]);

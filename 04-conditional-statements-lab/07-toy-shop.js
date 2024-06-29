@@ -20,7 +20,6 @@ function toyShop(input) {
     } else {
         console.log(`Not enough money! ${(tripPrice - sumAfterRent).toFixed(2)} lv needed.`);
     }
-    
 }
 
 toyShop(["40.8", "20", "25", "30", "50", "10"]);
