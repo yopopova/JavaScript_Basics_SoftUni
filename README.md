@@ -15,6 +15,10 @@ The "Programming Basics" course provides the initial programming skills necessar
 - Perform simple calculations
 - Working with more complex loops (nested for loops and while)
 
+## Note
+
+Please note that the tasks in the last folder ``22-JavaScript-book`` are from the Svetlin Nakov's book ["Programming Basics with JavaScript"](https://js-book.softuni.bg/). Each file contains the name of the task and the page it is on in the book.
+
 ## Certificate
 
 ![Programming Basics - May 2021 - Certificate](https://github.com/yopopova/JavaScript_Basics_SoftUni/assets/59256039/b890d58f-681b-4633-942d-f5d68e0593c5)
